@@ -66,12 +66,11 @@ public class ProdutosResource {
         return null;
     }
     
-    /**
-     * PUT method for updating or creating an instance of ProdutosResource
-     * @param content representation for the resource
-     */
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
-    public void putJson(String content) {
+    @Produces(MediaType.APPLICATION_JSON)
+    public String putJson(Produto produto) {
+        produtos.add(produto);
+        return gson.toJson(produto);
     }
 }

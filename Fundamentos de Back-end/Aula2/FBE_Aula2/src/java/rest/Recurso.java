@@ -8,6 +8,7 @@ package rest;
 import java.util.ArrayList;
 import java.util.List;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -43,6 +44,16 @@ public class Recurso {
     public Response Sobremone(Aluno aluno){
         aluno.setNome(aluno.getNome() + " da Silva");
         return Response.ok(aluno).build();
+        //return Response.status(Response.Status.FORBIDDEN).build();
+    }
+    
+    @Path("/edit")
+    @DELETE //import javax.ws.rs.POST; - Acesso via POST!!!
+    @Consumes ({"application/json"}) // recebe parametros
+    @Produces ({MediaType.APPLICATION_JSON})
+    public Response Editar(){
+        
+        return Response.ok("deletando o id ").build();
         //return Response.status(Response.Status.FORBIDDEN).build();
     }
 }
