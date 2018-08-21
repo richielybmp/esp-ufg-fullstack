@@ -6,7 +6,7 @@ A estrutura de pasta segue de acordo com as disciplinas e assuntos ministrados p
 
 ## Utilização
 
-Sinta-se livre para aproveitar do material. Caso deseje, faça o download do repositório ou clone através da url:
+Sinta-se livre para aproveitar o material. Caso deseje, faça o download do repositório ou clone através da url:
 ```
 https://github.com/richielybmp/esp-ufg-fullstack.git
 ```
