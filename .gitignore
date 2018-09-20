@@ -1,0 +1,4 @@
+#Ignorar pasta 'modules'
+node_modules/
+
+Fundamentos de Back-end Avançado/aula_fbea_nodeJs_mongoDb_express/node_modules/

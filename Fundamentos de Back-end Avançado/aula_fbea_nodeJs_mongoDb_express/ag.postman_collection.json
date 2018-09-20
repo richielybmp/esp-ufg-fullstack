@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "0eba3705-7d63-45bd-83dc-c9deaa7fca55",
+		"name": "ag",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_id",
+							"value": "1",
+							"sessionValue": "1",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"value": "15/09/2018",
+							"sessionValue": "15/09/2018",
+							"type": "text"
+						},
+						{
+							"key": "produtos[0][nome]",
+							"value": "Arroz Cristal",
+							"sessionValue": "Arroz Cristal",
+							"type": "text"
+						},
+						{
+							"key": "produtos[0][preco]",
+							"value": "20",
+							"sessionValue": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_id",
+							"value": "1",
+							"sessionValue": "1",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"value": "15/09/2018",
+							"sessionValue": "15/09/2018",
+							"type": "text"
+						},
+						{
+							"key": "produtos[0][nome]",
+							"value": "Arroz Cristal",
+							"sessionValue": "Arroz Cristal",
+							"type": "text"
+						},
+						{
+							"key": "produtos[0][preco]",
+							"value": "30",
+							"sessionValue": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_id",
+							"value": "1",
+							"sessionValue": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
