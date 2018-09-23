@@ -41,11 +41,11 @@ public class FuncionarioManagerImpl {
         try {
             String sql = "INSERT INTO funcionarios (nome, cpf, email, nascimento, telefone) values(?, ?, ?, ?, ?)";
             ps = conn.prepareStatement(sql);
-            ps.setString(1, funcionario.getNome());
-            ps.setString(2, funcionario.getCpf());
-            ps.setString(3, funcionario.getEmail());
+            ps.setString(1, funcionario.getNome().trim());
+            ps.setString(2, funcionario.getCpf().trim());
+            ps.setString(3, funcionario.getEmail().trim());
             ps.setDate(4, funcionario.getNascimento());
-            ps.setString(5, funcionario.getTelefone());
+            ps.setString(5, funcionario.getTelefone().trim());
             ps.executeUpdate();
         } catch (SQLException e) {
             System.out.println(e.getLocalizedMessage());
@@ -60,11 +60,11 @@ public class FuncionarioManagerImpl {
         try {
             String sql = "UPDATE funcionarios SET nome=?, email=?, nascimento=?, telefone=? WHERE cpf=?";
             ps = conn.prepareStatement(sql);
-            ps.setString(1, funcionario.getNome());
-            ps.setString(2, funcionario.getEmail());
+            ps.setString(1, funcionario.getNome().trim());
+            ps.setString(2, funcionario.getEmail().trim());
             ps.setDate(3, funcionario.getNascimento());
-            ps.setString(4, funcionario.getTelefone());
-            ps.setString(5, funcionario.getCpf());
+            ps.setString(4, funcionario.getTelefone().trim());
+            ps.setString(5, funcionario.getCpf().trim());
             ps.executeUpdate();
         } catch (SQLException e) {
             System.out.println(e.getLocalizedMessage());
@@ -84,11 +84,11 @@ public class FuncionarioManagerImpl {
             rs = ps.executeQuery();
             while (rs.next()) {
                 f = new Funcionario();
-                f.setNome(rs.getString("nome"));
-                f.setCpf(rs.getString("cpf"));
+                f.setNome(rs.getString("nome").trim());
+                f.setCpf(rs.getString("cpf").trim());
                 f.setNascimento(rs.getDate("nascimento"));
-                f.setEmail(rs.getString("email"));
-                f.setTelefone(rs.getString("telefone"));
+                f.setEmail(rs.getString("email").trim());
+                f.setTelefone(rs.getString("telefone").trim());
             }
         } catch (SQLException e) {
         } finally {
@@ -107,11 +107,11 @@ public class FuncionarioManagerImpl {
             rs = ps.executeQuery();
             while (rs.next()) {
                 Funcionario f = new Funcionario();
-                f.setNome(rs.getString("nome"));
-                f.setCpf(rs.getString("cpf"));
+                f.setNome(rs.getString("nome").trim());
+                f.setCpf(rs.getString("cpf").trim());
                 f.setNascimento(rs.getDate("nascimento"));
-                f.setEmail(rs.getString("email"));
-                f.setTelefone(rs.getString("telefone"));
+                f.setEmail(rs.getString("email").trim());
+                f.setTelefone(rs.getString("telefone").trim());
                 funcionarios.add(f);
             }
         } catch (SQLException e) {
