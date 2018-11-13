@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "828ab6b3-2c1b-4f01-829a-c2bd16315fc9",
+		"name": "api-filmes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET FILMES",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"modelo\":\"Palio\",\n\t\"valor\":\"15000\",\n\t\"vendedor\":\"Carlos\",\n\t\"comprador\":\"Roberto\",\n\t\"apolice\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/filmes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"filmes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET FILMES",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"modelo\":\"Palio\",\n\t\"valor\":\"15000\",\n\t\"vendedor\":\"Carlos\",\n\t\"comprador\":\"Roberto\",\n\t\"apolice\": 1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/filmes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"filmes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1091",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Oct 2018 00:48:12 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"443-Vf4TmHdP7ujTbNkVg4TVAl8ke+Y\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "[{\"_id\":\"5bb2a97d13eb6238f8e03df0\",\"titulo\":\"Star Wars\",\"diretor\":\"George Lucas\",\"genero\":\"Sci-Fi\",\"ano\":\"1977-05-25T00:00:00.000Z\",\"reviews\":[],\"__v\":0},{\"_id\":\"5bb2b698d5882720284bf1cf\",\"titulo\":\"Star Wars\",\"diretor\":\"George Lucas\",\"genero\":\"Sci-Fi\",\"ano\":\"1977-05-25T00:00:00.000Z\",\"reviews\":[],\"__v\":0},{\"_id\":\"5bb2b6d963289f020cfe90e4\",\"titulo\":\"Star Wars\",\"diretor\":\"George Lucas\",\"genero\":\"Sci-Fi\",\"ano\":\"1977-05-25T00:00:00.000Z\",\"reviews\":[],\"__v\":0},{\"_id\":\"5bb2bd8e31725212c4ae5b1f\",\"titulo\":\"Star Wars\",\"diretor\":\"George Lucas\",\"genero\":\"Sci-Fi\",\"ano\":\"1977-05-25T00:00:00.000Z\",\"reviews\":[],\"__v\":0},{\"_id\":\"5bb54ff39a1df826f83f2496\",\"titulo\":\"Vingadores\",\"diretor\":\"Sei la\",\"genero\":\"Herói/Ação/Aventura\",\"ano\":\"2018-10-03T00:00:00.000Z\",\"reviews\":[],\"__v\":0},{\"_id\":\"5bb5513f20bed42e24f691ec\",\"titulo\":\"Vingadores\",\"diretor\":\"Sei la\",\"genero\":\"Herói/Ação/Aventura\",\"ano\":\"2018-10-03T00:00:00.000Z\",\"reviews\":[],\"__v\":0},{\"_id\":\"5bb5619051f5c42850c5c463\",\"titulo\":\"Jumanji\",\"diretor\":\"Who Knows\",\"genero\":\"Aventura\",\"ano\":\"2017-08-25T00:00:00.000Z\",\"reviews\":[],\"__v\":0}]"
+				}
+			]
+		},
+		{
+			"name": "POST FILME",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "titulo",
+							"value": "Jumanji",
+							"type": "text"
+						},
+						{
+							"key": "diretor",
+							"value": "Who Knows",
+							"type": "text"
+						},
+						{
+							"key": "genero",
+							"value": "Aventura",
+							"type": "text"
+						},
+						{
+							"key": "ano",
+							"value": "2017-08-25",
+							"type": "text"
+						},
+						{
+							"key": "_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/filmes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"filmes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET FILME ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/filmes/5bb2a97d13eb6238f8e03df0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"filmes",
+						"5bb2a97d13eb6238f8e03df0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE FILME ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/filmes/5bb2a97d13eb6238f8e03df0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"filmes",
+						"5bb2a97d13eb6238f8e03df0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "api-filmes",
+  "version": "1.0.0",
+  "description": "Api em NodeJs que disponibiliza uma listagem de filmes e reviews.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "api",
+    "mongodb",
+    "programming"
+  ],
+  "author": "Richiely Batista",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "debug": "^4.0.1",
+    "express": "^4.16.3",
+    "express-query-int": "^3.0.0",
+    "express-register-routes": "^1.0.2",
+    "http": "0.0.0",
+    "mongoose": "^5.3.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
