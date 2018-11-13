@@ -1,0 +1,31 @@
+{
+  "name": "aula_fbea_nodejs_mongodb_express_api",
+  "version": "1.0.0",
+  "description": "Exemplo de API com NodeJs MongoDb e Express",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-query-int": "^3.0.0",
+    "lodash": "^4.17.11",
+    "mongod": "^2.0.0",
+    "mongoose": "^5.2.17",
+    "mongoose-paginate": "^5.0.3",
+    "node-restful": "^0.2.6",
+    "pm2": "^3.1.2",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon",
+    "production": "pm2 start index.js --name aula_fbea_nodeJs_mongoDb_express_api",
+    "stop": "pm2 stop aula_fbea_nodeJs_mongoDb_express_api",
+    "show": "pm2 show aula_fbea_nodeJs_mongoDb_express_api"
+  },
+  "author": "Richiely Batista",
+  "license": "ISC"
+}

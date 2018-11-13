@@ -1,4 +1,4 @@
-const mongoose = require('./restful-model')
+const mongoose = require('../restful/restful-model')
 
 const apoliceSchema = new mongoose.model.Schema
 ({

@@ -1,0 +1,160 @@
+h1,
+h3 {
+    text-align: center;
+    padding: 15px;
+}
+
+#pesquisar {
+    display: none;
+    padding-top: 55px;
+}
+
+#pesquisar>span {
+    display: block;
+    font-size: 30px;
+}
+
+form>legend,
+.caixa span,
+.localizar {
+    margin: 20px 0 20px 0;
+    display: block;
+    font-size: 30px;
+}
+
+.caixa span {
+    margin: 10px 0 10px 0;
+    display: block;
+    font-size: 20px;
+}
+
+.caixa {
+    padding-bottom: 20px;
+}
+
+.opcional,
+#vinculos {
+    display: none;
+}
+
+.bloco {
+    display: block;
+}
+
+.localizar form {
+    max-width: 320px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+td,
+th {
+    border: 1px solid #a9a9a9;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    cursor: pointer;
+}
+
+tr:hover:not(.trHeader) {
+    background-color: #f5f5f5;
+}
+
+#tabela-registros-indicadores {
+    display: none;
+}
+
+.vinculo,
+.contato {
+    overflow: hidden;
+}
+
+.acoes {
+    float: right;
+    margin: 10px 0 35px 0;
+}
+
+.acoes-id {
+    margin: 10px 0 35px 0;
+}
+
+.botoes-acoes {
+    margin: 15px;
+}
+
+input.btn {
+    margin-right: 10px;
+}
+
+caption {
+    caption-side: top !important;
+    padding: 0 0 0 8px !important;
+    font-style: italic;
+}
+
+.modal-header.excluir {
+    background-color: #bd2130;
+    color: white;
+}
+
+.modal-header.sobre {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-header.sucesso {
+    background-color: #28a745;
+    color: white;
+}
+
+.inferior {
+    position: absolute;
+    width: 150px;
+    top: unset !important;
+    bottom: 0;
+    width: 100%;
+}
+
+.modal-body pre {
+    overflow-x: hidden;
+}
+.space-between {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.icon-color{
+    color: #fff;
+}
+.btn-circle-plus{
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    background-color: #007bff;
+    color: white;
+    border:none;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn-circle-plus:hover{
+    background-color: #004e99;
+}
+.btn-circle-plus:focus{
+    outline: none;
+}
+.position-btn-plus{
+    margin: auto 0;
+    //position: absolute;
+    right: 10%;
+}
+.container-representacao-nome{
+    flex-direction: column;
+
+}

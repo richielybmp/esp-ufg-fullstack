@@ -1,5 +1,5 @@
-const mongoose = require('./restful-model')
-const Apolice = require('./apolice')
+const mongoose = require('../restful/restful-model')
+const Apolice = require('../model/apolice')
 
 const vendaSchema = new mongoose.model.Schema
 ({
@@ -35,4 +35,6 @@ const vendaSchema = new mongoose.model.Schema
         }
 })
 
-module.exports = mongoose.restful.model('Venda', vendaSchema)
+var vendaModel = mongoose.restful.model('Venda', vendaSchema)
+
+module.exports = vendaModel

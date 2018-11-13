@@ -1,4 +1,4 @@
-const Venda = require('./venda')
+const Venda = require('../model/venda')
 
 Venda.methods(['get', 'post', 'put', 'delete'])
 Venda.updateOptions({ new: true, runValidators: true })
