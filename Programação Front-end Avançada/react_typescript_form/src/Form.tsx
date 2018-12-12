@@ -88,7 +88,7 @@ class Form extends Component<FormProps, FormState> {
                 />
                 <input
                     type="button"
-                    value="Submit"
+                    value="Adicionar"
                     onClick={this.submitForm} />
             </form>
         )
