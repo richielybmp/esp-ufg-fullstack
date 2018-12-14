@@ -1,0 +1,15 @@
+<template>
+    <div class="ui link cards">
+        <div class="card" repeat.for="p of list">
+            <div class="image">
+                <img src.bind=p.coverImage>
+            </div>
+            <div class="content">
+                <span class="header">${p.nome}</span>
+                <div class="meta">
+                    <span>${p.seguidores} seguidores</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
