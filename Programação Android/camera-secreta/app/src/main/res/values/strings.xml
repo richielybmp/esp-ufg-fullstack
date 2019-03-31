@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PhotoCamera</string>
+    <string name="error_permission_not_granted">Permissão não concedida.</string>
+    <string name="permission_request_canceled">Pedido de permissão cancelada.</string>
+    <string name="title_error">Oops, algo deu errado.</string>
+    <string name="label_ok">Ok.</string>
+
+</resources>
